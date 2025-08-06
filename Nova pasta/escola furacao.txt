@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola de Futebol Furacão - Carapicuíba</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://googleusercontent.com/file_content/0">
+
+    <style>
+        /* Estilos personalizados e configuração do Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Cores personalizadas da marca */
+        .bg-brand-red { background-color: #A50D26; }
+        .text-brand-red { color: #A50D26; }
+        .border-brand-red { border-color: #A50D26; }
+        .ring-brand-red { --tw-ring-color: #A50D26; }
+        
+        /* Efeito de gradiente no hero */
+        .hero-gradient {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1551958214-2d5b914f6a06?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Animação suave para scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-black shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://googleusercontent.com/file_content/0" alt="[Logo da Escola Furacão]" class="h-12 md:h-16 mr-4">
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#planos" class="text-white hover:text-brand-red transition duration-300">Planos</a>
+                <a href="#unidades" class="text-white hover:text-brand-red transition duration-300">Unidades</a>
+                <a href="#avaliacao" class="text-white hover:text-brand-red transition duration-300">Avaliação</a>
+                <a href="#contato" class="text-white hover:text-brand-red transition duration-300">Contato</a>
+                <a href="#contato" class="bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-800 transition duration-300">Inscreva-se</a>
+            </nav>
+            <div class="md:hidden">
+                 <a href="#contato" class="bg-brand-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-800 transition duration-300">Inscreva-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider mb-4">FORME-SE UM CAMPEÃO</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto">Desenvolva seu talento na Escola de Futebol Furacão, a academia oficial do Athletico PR em Carapicuíba.</p>
+            <a href="#planos" class="bg-brand-red text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-red-800 transition duration-300">Conheça Nossos Planos</a>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
+    <section id="planos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">NOSSOS PLANOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Plano Black -->
+                <div class="bg-black text-white rounded-xl shadow-2xl p-8 flex flex-col transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">PLANO BLACK</h3>
+                    <p class="text-gray-300 mb-4">2x por semana</p>
+                    <div class="my-4">
+                        <span class="text-5xl font-black">R$120</span>
+                        <span class="text-gray-300">/mês</span>
+                    </div>
+                    <p class="text-gray-200 flex-grow mb-6">Treinamento intensivo para quem busca a máxima performance em campo.</p>
+                    <a href="#contato" class="w-full text-center bg-brand-red font-bold py-3 px-6 rounded-lg hover:bg-red-800 transition duration-300">Quero este!</a>
+                </div>
+
+                <!-- Plano Red -->
+                <div class="bg-white border-2 border-brand-red rounded-xl shadow-2xl p-8 flex flex-col transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold text-brand-red mb-2">PLANO RED</h3>
+                    <p class="text-gray-600 mb-4">Todos os sábados</p>
+                    <div class="my-4">
+                        <span class="text-5xl font-black text-gray-800">R$80</span>
+                        <span class="text-gray-500">/mês</span>
+                    </div>
+                    <p class="text-gray-700 flex-grow mb-6">Foco e diversão nos treinos de fim de semana para aprimorar suas habilidades.</p>
+                    <a href="#contato" class="w-full text-center bg-brand-red text-white font-bold py-3 px-6 rounded-lg hover:bg-red-800 transition duration-300">Quero este!</a>
+                </div>
+
+                <!-- Plano Futsal -->
+                <div class="bg-gray-800 text-white rounded-xl shadow-2xl p-8 flex flex-col transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">PLANO FUTSAL</h3>
+                    <p class="text-gray-300 mb-4">Toda sexta-feira</p>
+                    <div class="my-4">
+                        <span class="text-5xl font-black">R$80</span>
+                        <span class="text-gray-300">/mês</span>
+                    </div>
+                    <p class="text-gray-200 flex-grow mb-6">Agilidade, técnica e raciocínio rápido. Domine a quadra com nosso treino especializado.</p>
+                    <a href="#contato" class="w-full text-center bg-brand-red font-bold py-3 px-6 rounded-lg hover:bg-red-800 transition duration-300">Quero este!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Unidades Section -->
+    <section id="unidades" class="py-16 md:py-24 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">?? O QUE VOCÊ PROCURA, ENCONTRA AQUI!</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">?? Vila Marcondes</h3>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">?? Pq Jandaia</h3>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">?? ADPM Futsal</h3>
+                </div>
+            </div>
+            <div class="bg-brand-red p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+                <h3 class="text-2xl font-black mb-2">?? FUT360 | Alta Performance</h3>
+                <p class="text-lg">??Potencialize seu jogo! Domine o campo!??</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliação Section -->
+    <section id="avaliacao" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-black text-center text-brand-red uppercase mb-4">Avaliação - Academia de Futebol Athletico PR</h2>
+                <p class="text-center text-gray-600 mb-8">Leia atentamente as informações abaixo para participar da seleção de novos atletas para nossas equipes de competição.</p>
+                
+                <div class="space-y-6 text-gray-700">
+                    <p><strong class="text-black">Objetivo:</strong> Formação de equipes de competição para disputar o Campeonato Municipal (campo e futsal), Copa Furacão, Nacional, Copa SENO, entre outras.</p>
+
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-black">Observações Importantes:</h4>
+                        <ul class="list-decimal list-inside space-y-2 pl-4">
+                            <li>Esta ficha deve ser preenchida pelo <strong class="text-brand-red">responsável legal</strong> do atleta.</li>
+                            <li>A confirmação da participação será enviada via <strong class="text-brand-red">WhatsApp</strong> para o número informado na inscrição.</li>
+                            <li>O horário da avaliação será enviado junto com a confirmação de participação.</li>
+                            <li>No dia da avaliação, o atleta deve vestir <strong class="text-brand-red">calção e meião pretos e camisa branca ou preta</strong>. É proibido o uso de uniformes de outros times ou escolas.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-black">?? Local da Avaliação:</h4>
+                        <p>UNIDADE ATHLETICO PR CARAPICUIBA/SP (Quadra Society)<br>
+                        Rua Padre Emílio, 160, Vila Silviania, Carapicuíba - SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Formulário Section -->
+    <section id="contato" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">INSCREVA-SE PARA A AVALIAÇÃO</h2>
+                <p class="text-center text-gray-600 mb-8">Preencha o formulário abaixo para garantir a vaga do atleta. Entraremos em contato em breve!</p>
+                <p class="text-center text-sm text-gray-500 mb-8">Inicie sessão no Google para guardar o seu progresso. <a href="#" class="text-blue-600">Saiba mais</a></p>
+
+                <form id="inscricao-form" class="bg-gray-50 p-8 rounded-lg shadow-lg space-y-6">
+                    <div>
+                        <label for="nome-atleta" class="block text-sm font-bold text-gray-700 mb-2">Nome completo do atleta:</label>
+                        <input type="text" id="nome-atleta" name="Nome do Atleta" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                    </div>
+
+                    <div>
+                        <label for="outro-clube" class="block text-sm font-bold text-gray-700 mb-2">Já treinou em algum outro lugar? Se sim, qual?</label>
+                        <input type="text" id="outro-clube" name="Outro Clube" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="ano-nascimento" class="block text-sm font-bold text-gray-700 mb-2">Ano de nascimento:</label>
+                            <select id="ano-nascimento" name="Ano de Nascimento" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                                <option value="" disabled selected>Selecione o ano</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="posicao" class="block text-sm font-bold text-gray-700 mb-2">Qual posição costuma atuar?</label>
+                            <select id="posicao" name="Posição" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                                <option value="" disabled selected>Selecione a posição</option>
+                                <option value="goleiro">Goleiro</option>
+                                <option value="zagueiro">Zagueiro</option>
+                                <option value="lateral">Lateral</option>
+                                <option value="meio-campo">Meio campo</option>
+                                <option value="atacante">Atacante</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div>
+                        <label for="nome-responsavel" class="block text-sm font-bold text-gray-700 mb-2">Nome completo do responsável:</label>
+                        <input type="text" id="nome-responsavel" name="Nome do Responsável" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                    </div>
+                     <div>
+                        <label for="whatsapp" class="block text-sm font-bold text-gray-700 mb-2">WhatsApp do responsável (com DDD):</label>
+                        <input type="tel" id="whatsapp" name="WhatsApp" placeholder="(11) 99999-9999" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red" required>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="submit-button" class="w-full bg-brand-red text-white font-bold py-3 px-6 rounded-lg hover:bg-red-800 transition duration-300 text-lg">
+                            Enviar Inscrição
+                        </button>
+                    </div>
+                    <div id="form-message" class="text-center"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mapa Section -->
+    <section id="mapa" class="bg-gray-200">
+         <div class="container mx-auto px-6 py-16 text-center">
+             <h2 class="text-3xl font-bold mb-4">Nossa Localização Principal</h2>
+             <p class="mb-8">R. Padre Emílio, 160 - Vila Silviania, Carapicuíba - SP, 06321-480</p>
+             <div class="w-full h-96 rounded-lg shadow-xl overflow-hidden">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.33792010839!2d-46.8383823246714!3d-23.52086897882836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf015f63e4e9ad%3A0x33b8a34a87a7698a!2sR.%20Padre%20Em%C3%ADlio%2C%20160%20-%20Vila%20Silviania%2C%20Carapicu%C3%ADba%20-%20SP%2C%2006321-480!5e0!3m2!1spt-BR!2sbr!4v1722952899120!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+             </div>
+         </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <h3 class="text-xl font-bold mb-4">Entre em Contato</h3>
+                <div class="flex justify-center items-center space-x-6">
+                    <a href="https://wa.me/5511952284244" target="_blank" class="flex items-center space-x-2 hover:text-brand-red transition duration-300">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                        <span>(11) 95228-4244</span>
+                    </a>
+                    <a href="mailto:escolafuracaocarapicuiba@gmail.com" class="flex items-center space-x-2 hover:text-brand-red transition duration-300">
+                        <i class="far fa-envelope fa-2x"></i>
+                        <span>escolafuracaocarapicuiba@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2024 Escola de Futebol Furacão - Unidade Carapicuíba. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Desenvolvido com paixão pelo futebol.</p>
+        </div>
+    </footer>
+
+
+    <!-- =================================================================================================== -->
+    <!-- SCRIPT DE INTEGRAÇÃO COM GOOGLE SHEETS -->
+    <!-- =================================================================================================== -->
+    <!--
+        PARA FAZER O FORMULÁRIO FUNCIONAR, SIGA ESTES PASSOS:
+
+        1. ABRA SUA PLANILHA GOOGLE:
+           Acesse a planilha: https://docs.google.com/spreadsheets/d/10s6btljAey-A9mKJEoFuIQDHyZtjS93Gra6Yjhsd8ac/edit
+
+        2. ABRA O EDITOR DE SCRIPT:
+           No menu superior, clique em "Extensões" > "Apps Script".
+
+        3. COLE O CÓDIGO ABAIXO:
+           Apague todo o código que estiver no editor e cole o código que está abaixo destas instruções.
+           Este código irá receber os dados do formulário e adicioná-los à sua planilha.
+
+           // CÓDIGO DO GOOGLE APPS SCRIPT (PARA COLAR LÁ)
+           function doPost(e) {
+             try {
+               var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+               
+               // Pega os cabeçalhos da primeira linha
+               var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+               var newRow = [];
+               
+               // Adiciona um timestamp na primeira coluna
+               newRow.push(new Date());
+
+               // Mapeia os dados do formulário para as colunas corretas
+               for (var i = 1; i < headers.length; i++) {
+                 var header = headers[i];
+                 newRow.push(e.parameter[header] || ""); // Usa "" se o campo não existir
+               }
+               
+               // Adiciona a nova linha
+               sheet.appendRow(newRow);
+               
+               return ContentService.createTextOutput(JSON.stringify({ "result": "success" })).setMimeType(ContentService.MimeType.JSON);
+             } catch (error) {
+               return ContentService.createTextOutput(JSON.stringify({ "result": "error", "error": error.toString() })).setMimeType(ContentService.MimeType.JSON);
+             }
+           }
+
+
+        4. FAÇA A IMPLANTAÇÃO (DEPLOY):
+           a. No canto superior direito do editor de script, clique no botão azul "Implantar".
+           b. Selecione "Nova implantação".
+           c. Clique no ícone de engrenagem (??) ao lado de "Selecione o tipo" e escolha "App da Web".
+           d. Em "Descrição", coloque algo como "Formulário de Contato Site Furacão".
+           e. Em "Executar como", deixe "Eu (seu.email@gmail.com)".
+           f. Em "Quem pode acessar", selecione "Qualquer pessoa". **ISSO É MUITO IMPORTANTE!**
+           g. Clique em "Implantar".
+
+        5. AUTORIZE O SCRIPT:
+           O Google pedirá permissão para que o script acesse sua planilha. Clique em "Autorizar acesso" e siga as instruções (pode ser necessário clicar em "Avançado" e depois em "Acessar... (não seguro)", mas não se preocupe, é seguro pois o script é seu).
+
+        6. COPIE A URL DO APP DA WEB:
+           Após a implantação, uma janela aparecerá com a "URL do app da Web". Copie essa URL.
+
+        7. COLE A URL NO CÓDIGO ABAIXO:
+           No código JavaScript desta página (logo abaixo), substitua a frase 'COLE_A_URL_DO_SEU_SCRIPT_AQUI' pela URL que você acabou de copiar.
+    -->
+    <script>
+        const form = document.getElementById('inscricao-form');
+        const submitButton = document.getElementById('submit-button');
+        const formMessage = document.getElementById('form-message');
+
+        // ??? URL DO SCRIPT DO GOOGLE SHEETS ???
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-sEz87aD1fUA3XOFOMDeXaHdbxc7YpagGrV6CE82dnmH-_M-m8U4jUJ07QjGlAmLwkw/exec'; 
+        // ??? URL DO SCRIPT DO GOOGLE SHEETS ???
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            if (SCRIPT_URL === 'COLE_A_URL_DO_SEU_SCRIPT_AQUI') {
+                formMessage.innerHTML = '<p class="text-red-500 font-bold">Erro: A URL do script do Google Sheets não foi configurada.</p>';
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.innerHTML = 'Enviando...';
+            formMessage.innerHTML = '';
+
+            const formData = new FormData(form);
+            
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    formMessage.innerHTML = '<p class="text-green-600 font-bold">Inscrição enviada com sucesso! Entraremos em contato em breve.</p>';
+                    form.reset();
+                } else {
+                    throw new Error(data.error || 'Ocorreu um erro desconhecido.');
+                }
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                formMessage.innerHTML = `<p class="text-red-500 font-bold">Ocorreu um erro ao enviar a inscrição. Tente novamente. Detalhe: ${error.message}</p>`;
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'Enviar Inscrição';
+            });
+        });
+    </script>
+
+</body>
+</html>
