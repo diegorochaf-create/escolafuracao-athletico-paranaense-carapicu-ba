@@ -1,2 +1,2 @@
-# escolafuracao-athletico-paranaense-carapicu-ba
+# escolafuracao-athletico-paranaense-carapicuiba
 Escolinha de futebol
